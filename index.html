@@ -1,26 +1,191 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="./css/style.css">
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <div class="head-left">
+          <div class="head-one">
+            <img
+              src="https://unpkg.com/@alaskaairux/icons@4.10.1/dist/logos/logo-AS-tagline.svg"
+              alt=""
+            />
+          </div>
+          <div class="head-two">
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="">About US</a></li>
+              <li><a href="">Faq</a></li>
+              <li><a href="">Airlines</a></li>
+              <li><a href="">Cruise</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="head-right">
+          <a href="tel:09087663545">info@alaskaairreservation.com</a>
+        </div>
+      </div>
+    </header>
 
-    <body>
-        <header>
-            <div class="header-content">
-                <div class="head-left">
-                    <div class="head-one"><img src="https://unpkg.com/@alaskaairux/icons@4.10.1/dist/logos/logo-AS-tagline.svg" alt=""></div>
-                <div class="head-two">
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="">About US</a></li>
-                        <li><a href="">Faq</a></li>
-                        <li><a href="">Airlines</a></li>
-                        <li><a href="">Cruise</a></li>
-                    </ul>
-                </div>
-                </div>
-                <div class="head-right"><a href="tel:09087663545">9090766534434</a></div>
+    <section class="section-one">
+      <div class="sec-one">
+        <div class="one-content">
+          <h1>
+            Quick And Easy Search Book Today Price Match Promise! All Within
+            Your Budget !
+          </h1>
+        </div>
+        <div class="one-form">
+          <div class="form-head">Flights</div>
+          <form action="formpost" id="myForm">
+            <div class="trip-type">
+              <label for="round-trip"
+                ><input
+                  type="radio"
+                  name="trip-type"
+                  id="round-trip"
+                  value="round-trip"
+                />
+                Round Trip</label
+              >
+              <label for="one-way"
+                ><input
+                  type="radio"
+                  name="trip-type"
+                  id="one-way"
+                  value="one-way"
+                />
+                One Way</label
+              >
             </div>
-        </header>
 
-    </body>
+            <div class="one-flight">
+              <div class="form-details">
+                <div class="form-each">
+                  <img src="./assets/image/air1.PNG" alt="" />
+                  <input
+                    type="text"
+                    class="dis-input"
+                    placeholder="From Airport / City"
+                  />
+                </div>
+                <div class="form-each">
+                  <img src="./assets/image/air2.PNG" alt="" />
+                  <input
+                    type="text"
+                    class="dis-input"
+                    placeholder="To Airport / City"
+                  />
+                </div>
+                <div class="form-each">
+                  <img src="./assets/image/depart.PNG" alt="" />
+                 <label for="leave"> Departure
+                    <input
+                      type="date"
+                      class="dis-input"
+                      placeholder="Departure Date"
+                      id="leave"
+                      class="form-dep"
+                    /></label>
+
+                </div>
+
+                <div class="form-each">
+                    <img src="./assets/image/depart.PNG" alt="" />
+                    <label for="return">
+                        Return
+                    <input
+                      type="date"
+                      class="dis-input"
+                      placeholder="Departure Date"
+                      id="leave"
+                      class="form-dep"
+                    />
+                    </label>
+                  </div>
+              </div>
+
+              <div class="form-people">
+                <div class="people-ad">
+                    <h4>Adults</h4>
+                    <div class="adult-button">
+                        <button type="button" id="decrement">-1</button>
+                        <input type="number" id="input" value="0">
+                        <button type="button" id="increment">+1</button>
+                    </div>
+                </div>
+                <div class="people-ad">
+                    <h4>Chilren </h4>
+                    <div class="adult-button">
+                        <button type="button" id="decrement">-1</button>
+                        <input type="number" id="input" value="0">
+                        <button type="button" id="increment">+1</button>
+                    </div>
+                </div>
+                <div class="people-ad">
+                    <h4>Infants</h4>
+                    <div class="adult-button">
+                        <button type="button" id="decrement">-1</button>
+                        <input type="number" id="input" value="0">
+                        <button type="button" id="increment">+1</button>
+                    </div>
+                </div>
+
+                <div class="people-ad">
+                    <div class="form-each">
+                        <img src="./assets/image/man.PNG" alt="" />
+                        <select id="mySelect">
+                            <option value="Economy">Economy</option>
+                            <option value="premium">Premium Economy</option>
+                            <option value="Business">Business calss</option>
+                            <option value="first">First Class</option>
+                        </select>
+                      </div>
+                    
+                </div>
+              </div>
+
+              <div class="form-submit">
+                <button>Search Flights</button>
+            </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script>
+        const decrementButton = document.getElementById("decrement");
+        const incrementButton = document.getElementById("increment");
+        const inputElement = document.getElementById("input");
+
+        decrementButton.addEventListener("click", () => {
+            let value = parseInt(inputElement.value);
+            if (value > 0) {
+                inputElement.value = value - 1;
+            }
+        });
+
+        incrementButton.addEventListener("click", () => {
+            let value = parseInt(inputElement.value);
+            inputElement.value = value + 1;
+        });
+    </script>
+
+<script>
+    const formElement = document.getElementById("myForm");
+
+    // Prevent form submission when any button is clicked
+    formElement.addEventListener("submit", function(event) {
+        event.preventDefault();
+    });
+
+    // Rest of your JavaScript code for incrementing and decrementing goes here
+</script>
+  </body>
 </html>
