@@ -28,7 +28,7 @@ padding: 10px 0px;
     align-items: center;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 500px) {
 
     *{
         font-size: normal;
