@@ -608,7 +608,7 @@ html.auro {
     --auro-color-alert-advisory-on-dark: #fff0cd;
     --auro-color-background-lightest: #ffffff;
     --auro-color-background-lighter: #f8f8f8;
-    --auro-color-background-darker: #01426a;
+    --auro-color-background-darker: #032561;
     --auro-color-background-darkest: #00274a;
     --auro-color-base-white: #ffffff;
     --auro-color-base-white-opacity-40: rgba(255, 255, 255, 0.4);
@@ -641,7 +641,7 @@ html.auro {
     --auro-color-brand-midnight-100: #c1daf0;
     --auro-color-brand-midnight-200: #569ed7;
     --auro-color-brand-midnight-300: #156fad;
-    --auro-color-brand-midnight-400: #01426a;
+    --auro-color-brand-midnight-400: #032561;
     --auro-color-brand-midnight-500: #00274a;
     --auro-color-brand-atlas-100: #cde6ff;
     --auro-color-brand-atlas-200: #6bb7fb;
@@ -713,7 +713,7 @@ html.auro {
     --auro-color-text-error-on-dark: #ff999b;
     --auro-color-text-disabled-on-light: #dbdbdb;
     --auro-color-text-disabled-on-dark: #dbdbdb;
-    --auro-color-text-emphasis-on-light: #01426a;
+    --auro-color-text-emphasis-on-light: #032561;
     --auro-color-text-emphasis-on-dark: #c1daf0;
     --auro-color-tier-alaska-mvp-on-light: #726e6c;
     --auro-color-tier-alaska-mvp-on-dark: #c5c1bf;

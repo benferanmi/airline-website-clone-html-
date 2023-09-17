@@ -675,7 +675,7 @@ section#express-or-ncr>div.xpc-buttons div.ncr-button>span {
     text-align: center;
     vertical-align: baseline;
     white-space: nowrap;
-    background-color: #01426a;
+    background-color: #032561;
     border-radius: 10px;
     padding: 3px 7px;
     font-size: 12px;
@@ -693,9 +693,9 @@ section#express-or-ncr>div.xpc-buttons div.ncr-button>span {
 }
 
 #skip-to-main-link:focus {
-    color: #01426a;
+    color: #032561;
     background: #fff;
-    border: 1px solid #01426a;
+    border: 1px solid #032561;
     border-radius: 5px;
     padding: 5px
 }
@@ -737,7 +737,7 @@ section#express-or-ncr>div.xpc-buttons div.ncr-button>span {
 }
 
 #hf-top>ul>li>a,#ezb-hf-top>ul>li>a,#ta-hf-top>ul>li>a {
-    color: #01426a;
+    color: #032561;
     text-transform: uppercase;
     padding: 13px 8px;
     font-size: 14px
@@ -748,7 +748,7 @@ section#express-or-ncr>div.xpc-buttons div.ncr-button>span {
 }
 
 #hf-top .arrow-down,#ezb-hf-top .arrow-down,#ta-hf-top .arrow-down {
-    border-top: 7px solid #01426a;
+    border-top: 7px solid #032561;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     margin-left: 5px;
@@ -805,10 +805,10 @@ section#express-or-ncr>div.xpc-buttons div.ncr-button>span {
 }
 
 #hf-top .navbar-greeting-popup .userInfo,#ezb-hf-top .navbar-greeting-popup .userInfo,#ta-hf-top .navbar-greeting-popup .userInfo {
-    background-color: #01426a;
-    border-top: 1px solid #01426a;
-    border-left: 1px solid #01426a;
-    border-right: 1px solid #01426a;
+    background-color: #032561;
+    border-top: 1px solid #032561;
+    border-left: 1px solid #032561;
+    border-right: 1px solid #032561;
     padding: 20px 30px
 }
 
@@ -887,7 +887,7 @@ section#express-or-ncr>div.xpc-buttons div.ncr-button>span {
 }
 
 .signed-in-true #hf-top .navbar-greeting-popup .arrow-up {
-    border-bottom: 10px solid #01426a;
+    border-bottom: 10px solid #032561;
     top: -10px
 }
 
@@ -1006,11 +1006,11 @@ body #hf-h #ezb-hf-nav-mobile .ow-item .ow-logo {
 }
 
 #hf-nav>.pure-menu-list>.pure-menu-item.pure-menu-active>a,#ezb-hf-nav>.pure-menu-list>.pure-menu-item.pure-menu-active>a,#ta-hf-nav>.pure-menu-list>.pure-menu-item.pure-menu-active>a {
-    border-bottom: 3px solid #01426a
+    border-bottom: 3px solid #032561
 }
 
 #hf-nav>.pure-menu-list>.pure-menu-item>a,#ezb-hf-nav>.pure-menu-list>.pure-menu-item>a,#ta-hf-nav>.pure-menu-list>.pure-menu-item>a {
-    color: #01426a;
+    color: #032561;
     height: 30px;
     border-bottom: 4px solid transparent;
     margin: 0 14px;
@@ -1020,7 +1020,7 @@ body #hf-h #ezb-hf-nav-mobile .ow-item .ow-logo {
 }
 
 #hf-nav>.pure-menu-list>.pure-menu-item>a:hover,#hf-nav>.pure-menu-list>.pure-menu-item>a:focus,#ezb-hf-nav>.pure-menu-list>.pure-menu-item>a:hover,#ezb-hf-nav>.pure-menu-list>.pure-menu-item>a:focus,#ta-hf-nav>.pure-menu-list>.pure-menu-item>a:hover,#ta-hf-nav>.pure-menu-list>.pure-menu-item>a:focus {
-    border-bottom: 3px solid #01426a;
+    border-bottom: 3px solid #032561;
     text-decoration: none;
     transition: all .3s
 }
@@ -1066,7 +1066,7 @@ body #hf-h #ezb-hf-nav-mobile .ow-item .ow-logo {
 }
 
 #hf-nav .pure-menu-column h4,#ezb-hf-nav .pure-menu-column h4,#ta-hf-nav .pure-menu-column h4 {
-    color: #01426a;
+    color: #032561;
     margin: 32px 0 12px
 }
 
@@ -1145,7 +1145,7 @@ body #hf-h #ezb-hf-nav-mobile .ow-item .ow-logo {
 
 .hf-signin-form .form-control {
     width: 100%;
-    color: #01426a;
+    color: #032561;
     width: 100%;
     border: 1px solid #c8c9c7;
     border-radius: 2px;
@@ -1305,7 +1305,7 @@ body #hf-h #ezb-hf-nav-mobile .ow-item .ow-logo {
 }
 
 .hf-nav-mobile h2 {
-    color: #01426a;
+    color: #032561;
     background-color: #fff;
     margin-top: 0;
     margin-bottom: 0;
@@ -1316,7 +1316,7 @@ body #hf-h #ezb-hf-nav-mobile .ow-item .ow-logo {
 
 .hf-nav-mobile .svgtext {
     text-transform: uppercase;
-    color: #01426a;
+    color: #032561;
     font-size: 9px;
     font-weight: 500;
     position: relative;
@@ -1384,7 +1384,7 @@ body #hf-h #ezb-hf-nav-mobile .ow-item .ow-logo {
 .hf-nav-mobile .hamburger-bar {
     height: 3px;
     width: 28px;
-    background-color: #01426a;
+    background-color: #032561;
     border-radius: 1px;
     margin: 4px 5px 0;
     display: block
@@ -1407,7 +1407,7 @@ body #hf-h #ezb-hf-nav-mobile .ow-item .ow-logo {
     width: 100%;
     z-index: 499;
     height: 100%;
-    color: #01426a;
+    color: #032561;
     background-color: #fff;
     flex-direction: column;
     padding-bottom: 55px;
@@ -1445,7 +1445,7 @@ body #hf-h #ezb-hf-nav-mobile .ow-item .ow-logo {
 }
 
 .nav-mobile-menu .pure-menu-list>li>a {
-    color: #01426a;
+    color: #032561;
     padding: 10px 13px;
     font-size: 14px;
     display: block
@@ -2114,13 +2114,13 @@ html,body {
     }
 
     #hf-nav-mobile .alaska-logo,#ezb-hf-nav-mobile .alaska-logo,#ta-hf-nav-mobile .alaska-logo {
-        fill: #01426a;
+        fill: #032561;
         top: 0;
         left: 8px
     }
 
     #hf-nav-mobile .easybiz-logo,#hf-nav-mobile .icon-shop-share,#hf-nav-mobile .icon-search,#ezb-hf-nav-mobile .easybiz-logo,#ezb-hf-nav-mobile .icon-shop-share,#ezb-hf-nav-mobile .icon-search,#ta-hf-nav-mobile .easybiz-logo,#ta-hf-nav-mobile .icon-shop-share,#ta-hf-nav-mobile .icon-search {
-        fill: #01426a
+        fill: #032561
     }
 
     #hf-nav-mobile svg,#ezb-hf-nav-mobile svg,#ta-hf-nav-mobile svg,#hf-nav-mobile svg:hover,#ezb-hf-nav-mobile svg:hover,#ta-hf-nav-mobile svg:hover {
@@ -2254,7 +2254,7 @@ html,body {
 }
 
 .navbar-company-name {
-    color: #01426a;
+    color: #032561;
     margin-right: 16px;
     font-weight: 500
 }
@@ -2369,14 +2369,14 @@ html,body {
 }
 
 .search-wrapper input {
-    color: #01426a;
+    color: #032561;
     width: 100%;
     float: left;
     height: 40px;
     box-sizing: border-box;
     background-color: #fff;
     background-image: none;
-    border: 1.5px solid #01426a;
+    border: 1.5px solid #032561;
     border-radius: 5px;
     padding: 6px 32px 6px 8px;
     font-family: AS Circular,Helvetica Neue,Arial,sans-serif;
@@ -2486,7 +2486,7 @@ html,body {
 .search-mobile-wrapper .icon-search {
     width: 15px;
     height: 25px;
-    fill: #01426a;
+    fill: #032561;
     vertical-align: middle
 }
 
@@ -2551,7 +2551,7 @@ html,body {
 }
 
 .rocketmiles #hf-nav-mobile svg,.rocketmiles #hf-nav-mobile svg:hover {
-    fill: #01426a
+    fill: #032561
 }
 
 .rocketmiles .hf-f .alaska-footer {
@@ -2652,7 +2652,7 @@ html .form-control {
 }
 
 .menu-p {
-    color: #01426a;
+    color: #032561;
     white-space: normal;
     text-align: left;
     margin-top: 0;
@@ -2660,7 +2660,7 @@ html .form-control {
 }
 
 .menu-h3 {
-    color: #01426a;
+    color: #032561;
     white-space: normal;
     margin-top: 0;
     font-size: 18px;
@@ -2674,7 +2674,7 @@ html .form-control {
 }
 
 .menu-manage-or {
-    color: #01426a;
+    color: #032561;
     max-width: 70px;
     text-transform: uppercase;
     background: #fff;
@@ -2732,7 +2732,7 @@ html .form-control {
 }
 
 #hf-top.hf-nav-test .arrow-down {
-    border-top: 5px solid #01426a;
+    border-top: 5px solid #032561;
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
     margin-left: 5px;
@@ -2753,7 +2753,7 @@ html .form-control {
 .hf-nav-test .menu-desktop-user-svg {
     height: 18px;
     width: 18px;
-    stroke: #01426a;
+    stroke: #032561;
     float: left;
     margin-right: 10px
 }
@@ -2854,7 +2854,7 @@ body #hf-nav.hf-nav-test .menu-vertical-line,body #ta-hf-nav.hf-nav-test .menu-v
 body #hf-nav.hf-nav-test .menu-subnav-container,body #ta-hf-nav.hf-nav-test .menu-subnav-container,body #ezb-hf-nav.hf-nav-test .menu-subnav-container {
     width: 994px;
     letter-spacing: 0;
-    color: #01426a;
+    color: #032561;
     margin: -25px auto 0
 }
 
@@ -2865,13 +2865,13 @@ body #hf-nav.hf-nav-test .menu-subnav-container,body #ta-hf-nav.hf-nav-test .men
 }
 
 body #hf-nav.hf-nav-test .menu-subnav-container .menu-label,body #ta-hf-nav.hf-nav-test .menu-subnav-container .menu-label,body #ezb-hf-nav.hf-nav-test .menu-subnav-container .menu-label {
-    color: #01426a;
+    color: #032561;
     float: left;
     margin-bottom: 1px
 }
 
 body #hf-nav.hf-nav-test .menu-subnav-container .menu-h4,body #ta-hf-nav.hf-nav-test .menu-subnav-container .menu-h4,body #ezb-hf-nav.hf-nav-test .menu-subnav-container .menu-h4 {
-    color: #01426a;
+    color: #032561;
     margin-top: 0;
     margin-bottom: 12px;
     font-size: 16px
@@ -2914,7 +2914,7 @@ body #hf-nav.hf-nav-test .menu-subnav-container .menu-item .menu-item-a>span,bod
 }
 
 body #hf-nav.hf-nav-test .menu-subnav-container .menu-p-a.specialAnchor,body #ta-hf-nav.hf-nav-test .menu-subnav-container .menu-p-a.specialAnchor,body #ezb-hf-nav.hf-nav-test .menu-subnav-container .menu-p-a.specialAnchor {
-    color: #01426a
+    color: #032561
 }
 
 body #hf-nav.hf-nav-test .menu-subnav-container a.specialAnchor,body #ta-hf-nav.hf-nav-test .menu-subnav-container a.specialAnchor,body #ezb-hf-nav.hf-nav-test .menu-subnav-container a.specialAnchor {
@@ -3045,7 +3045,7 @@ body:not(.user-is-tabbing) .menu-mobile button:focus,body:not(.user-is-tabbing) 
 .hf-nav-mobile.menu-mobile .icon-shop-share {
     height: 28px;
     width: 28px;
-    fill: #01426a;
+    fill: #032561;
     margin-right: 5px;
     position: relative;
     top: -1px
@@ -3125,7 +3125,7 @@ body:not(.user-is-tabbing) .menu-mobile button:focus,body:not(.user-is-tabbing) 
 }
 
 .hf-nav-mobile.menu-mobile .menu-p-a.specialAnchor {
-    color: #01426a
+    color: #032561
 }
 
 .hf-nav-mobile.menu-mobile a.specialAnchor {
@@ -3186,7 +3186,7 @@ body:not(.user-is-tabbing) .menu-mobile button:focus,body:not(.user-is-tabbing) 
 }
 
 .menu-help-text {
-    color: #01426a;
+    color: #032561;
     float: right;
     margin: 1px;
     padding: 18px 2px 18px 10px;
@@ -3231,7 +3231,7 @@ a.menu-help-link,a.menu-help-link:visited,a.menu-help-link:hover,a.menu-help-lin
 }
 
 .hf-nav-mobile .menu-mobile-intro {
-    color: #01426a;
+    color: #032561;
     font-size: 14px
 }
 
@@ -3254,7 +3254,7 @@ a.menu-help-link,a.menu-help-link:visited,a.menu-help-link:hover,a.menu-help-lin
 }
 
 .hf-nav-mobile .menu-mobile-link {
-    color: #01426a!important;
+    color: #032561!important;
     padding: 10px 0!important;
     font-size: 14px!important;
     display: block!important
@@ -3265,7 +3265,7 @@ a.menu-help-link,a.menu-help-link:visited,a.menu-help-link:hover,a.menu-help-lin
 }
 
 .hf-nav-mobile .menu-mobile-subhead {
-    color: #01426a;
+    color: #032561;
     padding: 10px 0 0;
     font-size: 14px;
     font-weight: 500;
@@ -3291,7 +3291,7 @@ a.menu-help-link,a.menu-help-link:visited,a.menu-help-link:hover,a.menu-help-lin
 }
 
 .hf-nav-mobile .menu-label {
-    color: #01426a
+    color: #032561
 }
 
 .hf-nav-mobile .menu-mobile-sub {

@@ -68,7 +68,7 @@
 .HeroNav_symbol__6Hcpm svg {
     width: 16px;
     height: 16px;
-    fill: #0074c8;
+    fill: white;
     margin-right: 8px;
     margin-top: 4px
 }
@@ -97,7 +97,7 @@ svg#HeroNav_snowglobe___trVi {
 .HeroNav_HeroNav__mTaDJ {
     margin: 0;
     padding: 0 15px;
-    color: #0074c8
+    color: white;
 }
 
 @media screen and (min-width: 660px) {

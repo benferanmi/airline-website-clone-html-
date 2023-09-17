@@ -141,11 +141,11 @@
 }
 
 .homelet .nav-tabs li a:hover,.homelet .nav-tabs li a:active,.homelet .nav-tabs li a:focus {
-    color: #01426A
+    color: #032561
 }
 
 .homelet .nav-tabs li.active a,.homelet .nav-tabs li.active a:hover,.homelet .nav-tabs li a:hover {
-    background-color: #01426A;
+    background-color: #032561;
     color: #fff
 }
 
@@ -175,7 +175,7 @@
 
 .homelet .flight-search .nav-tabs li.active a,.homelet .flight-search .nav-tabs li.active a:hover,.homelet .flight-search .nav-tabs li a:hover,.homelet .flight-search .nav-tabs li a:focus,.homelet .flight-search .nav-tabs li.active a:focus {
     background-color: #b7af9b;
-    color: #01426A;
+    color: #032561;
     font-weight: bold
 }
 
@@ -207,7 +207,7 @@
 }
 
 .homelet .arrow-right {
-    border-left: 5px solid #01426A;
+    border-left: 5px solid #032561;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
     display: inline-block;
@@ -350,7 +350,7 @@
 }
 
 .homelet .city-prefs a:hover,.homelet .city-prefs a:focus,.homelet .cityPrefs a:hover,.homelet .cityPrefs a:focus {
-    color: #01426A
+    color: #032561
 }
 
 .homelet .flight-search .nav-tabs {
@@ -378,8 +378,8 @@
 }
 
 .homelet .flight-search .nav-tabs li.active a {
-    border-bottom-color: #01426A;
-    color: #01426A
+    border-bottom-color: #032561;
+    color: #032561
 }
 
 .homelet .flight-search .nav-tabs li.active a:hover,.homelet .flight-search .nav-tabs li a:hover,.homelet .flight-search .nav-tabs li a:focus {
