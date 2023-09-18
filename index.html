@@ -64,18 +64,41 @@
           <div class="head-two">
             <ul>
               <li><a href="/">Home</a></li>
-              <li><a href="./pages/about.html">About US</a></li>
-              <li><a href="">Faq</a></li>
+              <li><a href="./about.html">About US</a></li>
+              <li><a href="./terms.html">Privacy </a></li>
               <li><a href="">Airlines</a></li>
-              <li><a href="./pages/contact.html">Contact Us</a></li>
+              <li><a href="./contact.html">Contact Us</a></li>
             </ul>
           </div>
         </div>
         <div class="head-right">
-          <a href="tel:09087663545">info@alaskaairreservation.com</a>
+          <a href="mailto:info@alaskaairreservation.com">info@alaskaairreservation.com</a>
         </div>
       </div>
     </header>
+
+    <div class="overlay" id="overlay"></div>
+
+    <!-- The pop-up container -->
+    <div class="popup" id="popup">
+        <span class="cancel-button" id="cancel-button">&times;</span>
+        <!-- Add your pop-up content here -->
+        <div class="p-content">
+          <div class="p-top">
+            Alaska Airlines Reservations!! 
+          </div>
+
+          <div class="p-mid">
+            <img src="./assets/image/phone.PNG" style="width: 50px;">
+            <h3> Alaska Airlines  </h3>
+            <img src="./assets/image/work5.jpg" class="p-img-w" style="width: 150px;">
+          </div>
+
+          <div class="p-bottom">
+            <p>info@alaskaairreservation.com</p>
+          </div>
+        </div>
+    </div>
 
     <section class="section-one">
       <div class="sec-one">
@@ -116,6 +139,7 @@
                   <input
                     type="text"
                     class="dis-input"
+                    required
                     placeholder="From Airport / City"
                   />
                 </div>
@@ -123,6 +147,7 @@
                   <img src="./assets/image/air2.PNG" alt="" />
                   <input
                     type="text"
+                    required
                     class="dis-input"
                     placeholder="To Airport / City"
                   />
@@ -135,6 +160,7 @@
                       type="date"
                       class="dis-input"
                       placeholder="Departure Date"
+                      required
                       id="leave"
                       class="form-dep"
                   /></label>
@@ -147,6 +173,7 @@
                     <input
                       type="date"
                       class="dis-input"
+                      required
                       placeholder="Departure Date"
                       id="leave"
                       class="form-dep"
@@ -167,17 +194,17 @@
                 <div class="people-ad">
                   <h4>Chilren</h4>
                   <div class="adult-button">
-                    <button type="button" id="decrement">-1</button>
-                    <input type="number" id="input" value="0" />
-                    <button type="button" id="increment">+1</button>
+                    <button type="button" id="decrement1">-1</button>
+                    <input type="number" id="input1" value="0" />
+                    <button type="button" id="increment1">+1</button>
                   </div>
                 </div>
                 <div class="people-ad">
                   <h4>Infants</h4>
                   <div class="adult-button">
-                    <button type="button" id="decrement">-1</button>
-                    <input type="number" id="input" value="0" />
-                    <button type="button" id="increment">+1</button>
+                    <button type="button" id="decrement2">-1</button>
+                    <input type="number" id="input2" value="0" />
+                    <button type="button" id="increment2">+1</button>
                   </div>
                 </div>
 
@@ -195,7 +222,7 @@
               </div>
 
               <div class="form-submit">
-                <button>Search Flights</button>
+                <button><a href="./thankyou.html">Search Flights</a></button>
               </div>
             </div>
           </form>
@@ -214,7 +241,9 @@
             <p>Find low fares from</p>
             <h2>$50</h2>
 
-            <button>Find Flight Deals Now</button>
+            <div class="form-submit">
+              <button><a href="./thankyou.html">Find Flights</a></button>
+            </div>
           </div>
         </div>
       </div>
@@ -254,11 +283,11 @@
         <div class="f-top-left">
           <div><h2>About Alaska</h2></div>
           <div class="f-t-l-list">
-            <a href="./pages/about.html">Who we are</a>
+            <a href="./about.html">Who we are</a>
             <a href="">Privacy</a>
-            <a href="">Terms and condition</a>
-            <a href="">Who we are</a>
-            <a href="./pages/contact.html">Contact Us</a>
+            <a href="./terms.html">Terms and condition</a>
+            <a href="">Flightsa>
+            <a href="./contact.html">Contact Us</a>
           </div>
         </div>
         <div class="f-top-mid">
@@ -330,6 +359,42 @@
       });
     </script>
 
+<script>
+  const decrementButton1 = document.getElementById("decrement1");
+  const incrementButton1 = document.getElementById("increment1");
+  const inputElement1 = document.getElementById("input1");
+
+  decrementButton1.addEventListener("click", () => {
+    let value = parseInt(inputElement1.value);
+    if (value > 0) {
+      inputElement1.value = value - 1;
+    }
+  });
+
+  incrementButton1.addEventListener("click", () => {
+    let value = parseInt(inputElement1.value);
+    inputElement1.value = value + 1;
+  });
+</script>
+
+<script>
+  const decrementButton2 = document.getElementById("decrement2");
+  const incrementButton2 = document.getElementById("increment2");
+  const inputElement2 = document.getElementById("input2");
+
+  decrementButton2.addEventListener("click", () => {
+    let value = parseInt(inputElement2.value);
+    if (value > 0) {
+      inputElement2.value = value - 1;
+    }
+  });
+
+  incrementButton2.addEventListener("click", () => {
+    let value = parseInt(inputElement2.value);
+    inputElement2.value = value + 1;
+  });
+</script>
+
     <script>
       const formElement = document.getElementById("myForm");
 
@@ -340,5 +405,37 @@
 
       // Rest of your JavaScript code for incrementing and decrementing goes here
     </script>
+
+
+<!-- script fo the pop up -->
+<script>
+  // Get references to the overlay and pop-up elements
+  const overlay = document.getElementById('overlay');
+  const popup = document.getElementById('popup');
+
+  // Get reference to the cancel button
+  const cancelButton = document.getElementById('cancel-button');
+
+  // Function to display the pop-up
+  function displayPopup() {
+      overlay.style.display = 'block';
+      popup.style.display = 'block';
+  }
+
+  // Function to hide the pop-up
+  function hidePopup() {
+      overlay.style.display = 'none';
+      popup.style.display = 'none';
+  }
+
+  // Show the pop-up after page load (you can use 'DOMContentLoaded' event too)
+  window.onload = displayPopup;
+
+  // Add an event listener to the cancel button to hide the pop-up
+  cancelButton.addEventListener('click', hidePopup);
+
+  // Optionally, you can also hide the pop-up when clicking on the overlay
+  overlay.addEventListener('click', hidePopup);
+</script>
   </body>
 </html>
