@@ -1536,9 +1536,10 @@ body #hf-h #ezb-hf-nav-mobile .ow-item .ow-logo {
 }
 
 .hf-f .links-section {
-    grid-template-areas: "email_deals_area""we_care_area""mobile_area""credit_card_area""about_alaska_area""customer_service_area""products_resources_area""explore_fly_area""follow_us_area""."".""disclaimers_area""copyright_area";
+    grid-template-areas: "email_deals_area""we_care_area""mobile_area""credit_card_area""about_alaska_area""customer_service_area""follow_us_area""."".""disclaimers_area""copyright_area";
     justify-content: space-evenly;
-    row-gap: 5px;
+    row-gap: 15px;
+    column-gap: 20px;
     margin: auto;
     display: grid
 }
