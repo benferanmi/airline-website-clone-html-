@@ -1,0 +1,24 @@
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 9;
+    background: #095bad; 
+}
+
+
+.close-left {
+    right: -50px !important;
+    top: 30px !important;
+    background-color: #095bad;
+}
+
+@media screen and (max-width: 400px) {
+    .head-right {
+        display: none !important;
+    }
+}
