@@ -164,7 +164,6 @@ a.nav-link i {
     background-size: cover;
     background-repeat: no-repeat;
     padding: 139px 0px 80px 0px;
-    margin: -52px 0 0 0;
 }
 .main_banner:before {
     content:" ";
@@ -219,10 +218,9 @@ a.nav-link i {
 .banner_bottom_main_ico img {
     margin: -5px 0px 0px 0px;
     width: 100%;
+    background-color: #0b4075;
 }
-.banner_bottom_main_cont {
 
-}
 .banner_bottom_main_cont h4 {
     font-size: 18px;
     font-weight: 600;
@@ -571,7 +569,7 @@ a.nav-link i {
 }
 .footer_tofree {
     background: #01426a;
-    padding: 10px 0 10px 0;
+    padding: 10px 10px 10px 10px;
     position: relative;
     border-top: 1px solid #fff;
 }
@@ -1355,7 +1353,11 @@ a.link_add{display: block;color: #333;margin: 5px 0;}
 /*css for responsive website*/
 
 @media only screen and (min-width:320px) and (max-width:360px) {
-.footer_tofree:before {
+    .footer_tofree{
+        padding: 0px 10px;
+    }
+
+    .footer_tofree:before {
     width: 100%;
 }
 .footer_tofree:after {

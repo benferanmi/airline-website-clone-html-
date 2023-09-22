@@ -71,7 +71,20 @@ height: 200px;
                 alt=""
               />
             </div>
+
+            <div class="mobile-nav">
+               <button class="menu-button" onclick="toggleMenu()"><img src="./images/menu.png" alt="alaskaairreservation toogle menu" width="40px" height="40px"></button>
+    <div class="menu-links" id="menuLinks">
+           <a href="./second/index2.html">Home</a>
+           <a href="./about.html">About US</a>
+           <a href="./terms.html">Privacy </a>
+           <a href="">Airlines</a>
+           <a href="./contact.html">Contact Us</a>
+         
+    </div>
+            </div>
             <div class="head-two">
+            
               <ul>
                 <li><a href="./second/index2.html">Home</a></li>
                 <li><a href="./about.html">About US</a></li>
@@ -107,230 +120,50 @@ height: 200px;
     </div>
 </div>
 
-
-<style>
-
- #mask { position: fixed !important; left: 0;top: 0; z-index: 9000 !important; background: rgba(0, 0, 0, 0.9); display: none; height: 100% !important; width: 100% !important; z-index: 999; }
-   
-#boxes .window { left: 50% !important; position: fixed; top: 50% !important; z-index: 9999; width: 700px; transform: translate(-50%, -50%);}
-#boxes #dialog { background-color: #efefef; border-radius: 10px;}
-#boxes #dialog a { text-decoration: none;}
-.text-success2 { color: #0b4075; font-size: 20px; text-transform: uppercase; font-weight: 600; border-bottom: solid 1px #ee372b; padding-bottom: 6px;}
-.home-page-popup .form-horizontal .form-group { margin-left: 0; margin-right: 0; }
-.home-page-popup .close { display: block; height: 29px; margin: 0 auto; opacity: 1; overflow: hidden; position: absolute; right: 9px; text-indent: 0; top: 5px; width: 30px; }
-
-.flight { width: 100%; display: table; position: relative;}
-.flight img { position: absolute; top: 310px; width: 100%; height: 200px; }
-   
-.search-box_design { position: relative; height: 160px; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
-.search-box {position: absolute; top: 0; left: 0; width: 100%; display: table;}
-.result-box { width: 45%; display: table; float: left; text-align: center; }
-.search-heading { text-align: center; font-size: 25px; padding: 0px 0; font-weight: bold; color: #454545; }
-.arrow img { width: 65px; float: left; margin-top: 20px; }
-.one_way { text-align: center; font-weight: bold; background: #e67817; display: table; margin: 0 auto; padding: 5px 5px; color: #fff;}
-.close img { height: 100%; position: relative; z-index: 9999999; }
-   
-
-</style>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<style type="text/css"> 
-.popup-dsgn { width: 100%; display: table; }
-.popup-dsgn-box { width: 100%; display: table; background: url(./img/country-footer.png) no-repeat; background-size: contain; background-position: 100% 100%; position:relative;  border-radius:2px;}
-
-.popup-dsgn-box .popup-dsgn { border-radius: 2px; }
-
-.content_set2{ margin-top:25px; display:table; width:100%;} 
-
-.content_bx { display:table; width:100%; background-size: cover; padding: 0 0 32px 0; box-shadow: 0 2px 6px 0 rgba(255,255,255,.4);}
-.content_bx a{ text-decoration: none;}
-.mymodal_body{padding: 0}
-.my_model_ctnt{border:5px solid #02416c;}
-.close2{position: absolute;right: 9px;top: 4px;z-index: 11;opacity: 1;color: #fff;}
-.mymodel_here{border-bottom: 0;padding: 0;}
-
-.pnd_ddl {
-    background:#095bad;
-    padding: 10px 0;
-    text-align: center;
-}
-.pnd_ddl h4{ font-size:18px; color:#fff; margin:0px; text-transform: uppercase; font-weight:600;}
-.nn_dst { text-align: center;}
-.nn_dst h3 { font-size: 32px; text-transform: uppercase; line-height: 30px; color: #002049; margin: 20px 0 22px 0; font-weight: 600; 
-             letter-spacing: -0.5px;}
-.nn_dst h4 { font-size: 20px; letter-spacing: 0px; text-transform: uppercase; color: #464343; margin: 0 0 30px 0; font-weight: 600;}
-.nn_dst h5 { font-size: 22px; letter-spacing: 0px; text-transform: uppercase; color: #333; margin: 0 0 20px 0; font-weight: 600;}
-.lakdi_pn { height: 90px; overflow: hidden; width: 90px; margin: 25px auto 25px auto; text-align: center; border-radius: 50%;
-         background: #fff; box-shadow: 0 2px 6px 0 rgba(0,0,0,.4);}
-.lakdi_pn img { width: 100%; height: auto;}
-
-.exbt_cl{ text-align:center; margin: 15px 0 0 0;}
-.exbt_cl h6 {
-    font-size: 20px;
-    color: #000000;
-    margin: 20px 0 32px 0;
-    text-transform: uppercase;
-    position: relative;
-    font-weight: 600;
-}
-.exbt_cl h4 {
-    font-size: 24px;
-    color: #fff;
-    margin: 0px 0 15px 0;
-    padding: 15px 25px 15px 25px;
-    border: dashed 1px #fff;
-    display: inline-block;
-    letter-spacing: 2px;
-    border-radius: 12px;
-    background: #095bad;
-    font-weight: 600;
-}
-
-.fttr_ttl {
-    background:#01426a;
-    padding: 12px 10px;
-    width: 100%;
-    text-align: center;
-} 
-.fttr_ttl p { font-size: 18px; color: #fff; margin: 0px; text-transform: uppercase; }
-.fttr_ttl a { font-size: 26px; color: #fff; margin: 0px; text-decoration: none; display: block; line-height: 40px; font-weight: 600;}
-.fttr_ttl img { position: absolute; bottom: 0; width: 75px; left: 0;}
 
 
-/** RESONSIVE CSS START **/
+<div class="overlay" id="overlay"></div>
 
-@media (min-width:320px) and (max-width:479px) {
-  
-#boxes .window{ display:block; width: 100%; left: 0 !important; top: 0px !important; height:100%; transform: translate(0%, 0%);}  
-#boxes{ display:block;}
-.fttr_ttl{ padding:12px 10px; position: fixed; bottom: 0; width: 100%; left: 0; text-align: center;}
-.lakdi_pn { height: 90px; overflow: hidden;width: 90px;}
-.popup-dsgn-box {
-    width: 91%;
-    display: table;
-    background: url(./img/country-footer.png) no-repeat;
-    background-size: contain;
-    background-position: 100% 100%;
-    position: relative;
-    border-radius: 2px;
-    height: 100%;
-    background: #fff;
-}
-.close-left {
-    right: -1px !important;
-    background-color: #002049;
-}
-}
-
-@media (min-width:360px) and (max-width:639px){
-  
-#boxes .window{ display:block; width: 92%; left: 0 !important; top: 0px !important; transform: translate(0%, 0%);} 
-.close-left {
-    right: -30px !important;
-    top: 30px !important;
-    background-color: #002049;
-}
-#boxes{ display:block;}
-.fttr_ttl{ padding:12px 10px; position: fixed; bottom: 0; width: 100%; left: 0; text-align: center;}
-.lakdi_pn { height: 90px; overflow: hidden;width: 90px;}
-.popup-dsgn-box {
-    width: 100%;
-    display: table;
-    background: url(./img/country-footer.png) no-repeat;
-    background-size: contain;
-    background-position: 100% 100%;
-    position: relative;
-    border-radius: 2px;
-    height: 100%;
-    background: #fff;
-}
-}
-   
-</style>
-<div id="boxes" class="col-sm-6 col-sm-offset-3">
-   <div class="home-page-popup">
-      <div style="display: none;" id="dialog" class="window">
-       <a href="tel:1-800-920-8422" id="close_id" onClick="close_dilog(this.id)" class="close close-left">
-     <img width="30" height="20" src="images/icon-close.png" alt="cheap flight to Paris"> </a> 
-         <div class="popup-dsgn-box">
-          <div class="content_bx">
-        <a href="tel:1-800-920-8422">
-       <div class="pnd_ddl">
-        <h4> AlaskaReservations Reservations!! </h4>
-       </div>
-            <div class="nn_dst">
-        <div class="lakdi_pn">
-         <img src="images/customer-serve.png">
-      </div>
-       <h3> AlaskaReservations  </h3>
-        
-       <img src="images/bell_small.gif" style="width: 100px;"> 
-      </div>
-             
-       <div class="exbt_cl">
-        <h6> Exclusive Phone Only Deals </h6>
-        <h4> <i class="fa fa-headphones"></i> 1-800-920-8422 </h4>
-       </div>
-       </a>
-          </div>
-       <div class="fttr_ttl">
-        <p> Call US NOW </p>
-      <a href="tel:1-800-920-8422"> <i class="fa fa-headphones"></i> 1-800-920-8422 </a> 
-       </div>
+<!-- new popup -->
+<div class="popup" id="popup">
+   <span class="cancel-button" id="cancel-button">&times;
+   </span>
+   <div  class="">
+     <div class="home-page-popup">
+        <div class="window">
+           <div class="popup-dsgn-box">
+            <div class="content_bx">
+          <a href="tel:1-800-920-8422">
+         <div class="pnd_ddl">
+          <h4> AlaskaReservations Reservations!! </h4>
          </div>
-      </div>
-      <div style="opacity: 0.8;" id="mask">
-   </div>
-</div>
-</div> 
-
-
-
-<script type="text/javascript"> function close_dilog(id) {
-
-   document.getElementById(id).style.display="none";
-   document.getElementById("mask").style.display="none";
-   document.getElementById("dialog").style.display="none";
-   }
-   setTimeout(function() {
-   document.getElementById("dialog").style.display="block";
-   document.getElementById("mask").style.display="block";
-   var id='#dialog';
-   //Get the screen height and width
-   var maskHeight=$(document).height();
-   var maskWidth=$(window).width();
-   //Set heigth and width to mask to fill up the whole screen
-   $('#mask').css( {
-       'width': maskWidth, 'height': maskHeight
-   }
-   );
-   //transition effect    
-   $('#mask').fadeIn(1000);
-   $('#mask').fadeTo("slow", 0.8);
-   //Get the window height and width
-   var winH=$(window).height();
-   var winW=$(window).width();
-   //Set the popup window to center
-   $(id).css('top', winH/2-$(id).height()/2);
-   $(id).css('left', winW/2-$(id).width()/2);
-   //transition effect
-   $(id).fadeIn(2000);
-   //if close button is clicked
-   $('.window .close').click(function (e) {
-       //Cancel the link behavior
-       e.preventDefault();
-       $('#mask').hide();
-       $('.window').hide();
-   }
-   );
-   //if mask is clicked
-   $('#mask').click(function () {
-       $(this).hide();
-       $('.window').hide();
-   }
-   );
-   }
-   , 1000);
-</script> 
+              <div class="nn_dst">
+          <div class="lakdi_pn">
+           <img src="images/customer-serve.png">
+        </div>
+         <h3> AlaskaReservations  </h3>
+          
+         <img src="images/bell_small.gif" style="width: 100px;"> 
+        </div>
+               
+         <div class="exbt_cl">
+          <h6> Exclusive Phone Only Deals </h6>
+          <h4> <i class="fa fa-headphones"></i> 1-800-920-8422 </h4>
+         </div>
+         </a>
+            </div>
+         <div class="fttr_ttl">
+          <p> Call US NOW </p>
+        <a href="tel:1-800-920-8422"> <i class="fa fa-headphones"></i> 1-800-920-8422 </a> 
+         </div>
+           </div>
+        </div>
+        <div style="opacity: 0.8;" id="mask">
+     </div>
+  </div>
+  </div> 
+ </div>
 
 <div class="main_banner">
 	<div class="container">
@@ -402,37 +235,58 @@ height: 200px;
                                     <div style="display: none;" onclick="close_btn(this.id);" id="location2_cleardata" class="closed_icon"> <i class="fa fa-remove"></i> </div>
                                  </div>
                               </div>
-                              <div class="col-md-2  col-xs-6 ffrms_ppd">
-                                 <div class="res_hh">  Departure  </div>
-                                 <div class="tion_sea"> Departure </div>
+                              <div class="col-md-3 col-xs-6 ffrms_ppd">
+                                 <div class="res_hh">Return</div>
+                                 <div class="tion_sea">Return</div>
                                  <div class="form-group">
-                                    <label class="frm_llbs">
-                                       <i class="fa fa-calendar"></i> <!-- <img src="Searchform/images/dateoick.png"> --> 
-                                    </label>
-                                    <input name="depDt" id="depDt" type="hidden" value=''>
-                                    <input name="" id="depDtMin" type="hidden" value=''>
-                                    <input type="text" class="form-control ipt1 readtrue" id="datepicker" required="required" autocomplete="off" placeholder="Depart Date" name="departureDate" readonly="true" value="">
+                                   <label class="frm_llbs">
+                                     <i
+                                       class="fa fa-calendar"
+                                       aria-hidden="true"
+                                     ></i
+                                     ><!-- <img src="Searchform/images/dateoick.png"> -->
+                                   </label>
+                                   <input
+                                     name="retDt"
+                                     id="retDt"
+                                     type="hidden"
+                                     value=""
+                                   />
+                                   <div>
+                                     <input type="date" class="ipt1" />
+                                   </div>
                                  </div>
-                              </div>
-                              <!-- <style>
-                                 .readtrue {
-                                        cursor: pointer !important;
-                                        background-color: #fff !important;
-                                        opacity: 1;
-                                    }
-                                 .form-control[disabled], fieldset[disabled]{  background-color:#fff !important; } .form-control
-                              </style> -->
-                              <div class="col-md-2 col-xs-6 ffrms_ppd">
-                                 <div class="res_hh"> Return </div>
-                                 <div class="tion_sea"> Return </div>
+                               </div>
+                                
+                           
+                              <div class="col-md-3 col-xs-6 ffrms_ppd">
+                                 <div class="res_hh">Departure</div>
+                                 <div class="tion_sea">Departure</div>
                                  <div class="form-group">
-                                    <label class="frm_llbs">
-                                       <i class="fa fa-calendar"></i><!-- <img src="Searchform/images/dateoick.png"> --> 
-                                    </label>
-                                    <input name="retDt" id="retDt" type="hidden" value=''>
-                                    <input type="text" autocomplete="off" class="form-control ipt1 readtrue" required="required" id="datepicker2" placeholder="Return Date" readonly="true" value="" name="returnDate">                                       
+                                   <label class="frm_llbs">
+                                     <i
+                                       class="fa fa-calendar"
+                                       aria-hidden="true"
+                                     ></i>
+                                     <!-- <img src="Searchform/images/dateoick.png"> -->
+                                   </label>
+                                   <input
+                                     name="depDt"
+                                     id="depDt"
+                                     type="hidden"
+                                     value=""
+                                   />
+                                   <input
+                                     name=""
+                                     id="depDtMin"
+                                     type="hidden"
+                                     value=""
+                                   />
+                                   <div>
+                                     <input type="date" class="ipt1" />
+                                   </div>
                                  </div>
-                              </div>
+                               </div>
                               <div class="col-md-2 col-sm-6 col-xs-12 ffrms_ppd">
                                  <div class="res_hh">
                                     <!-- Cabin Class &  -->Travelers  
@@ -1087,8 +941,7 @@ height: 200px;
             <div class="about_cont">
                	<h4>About <span>AlaskaReservations</span> <i class="fa fa-plane"></i> </h4>
                	<p>We at AlaskaReservations.com are a well-known name in the Air Ticket Booking industry. The feature that distinguishes our Air Ticket Booking service is our strategy, which pays attention to every possible part of ticket booking. Our rates are very competitive, and our service level is simply unrivaled. Our Air Ticket Booking systems have been developed to electronically process your every need, using cutting-edge software. We charge a small processing fee on airline tickets purchased by our customers. We assist with the purchase of airline tickets on both domestic and foreign flights on major airlines. Both of our customers get prompt and efficient service. </p>
-			<p>We are dedicated to doing business in a professional and ethical way. Our travel experts are motivated and driven by our guiding values,  <a href="about-us.php" style="text-decoration: none;
-    color: #ef6f0c;">Read more</a> </p>
+			<p>We are dedicated to doing business in a professional and ethical way. Our travel experts are motivated and driven by our guiding values.</p>
             </div>
          </div>
       </div>
@@ -1155,7 +1008,7 @@ height: 200px;
                </div>
                <div class="col-md-6">
                   <div class="Bt_tfn">
-                     <a href="#"> <i class="fa fa-map-marker"></i> 11915 NW Thompson Rd, Portland, OR 97229 USA </a>
+                     <a href="#"> <i class="fa fa-map-marker"></i> 11915 NW Thompson Rd, OR 97229 USA </a>
                   </div>
                </div>
             </div>
@@ -1183,6 +1036,49 @@ height: 200px;
       </div>
    </div>
 </section>
+
+<!-- script fo the pop up -->
+<script>
+   // Get references to the overlay and pop-up elements
+   const overlay = document.getElementById('overlay');
+   const popup = document.getElementById('popup');
+ 
+   // Get reference to the cancel button
+   const cancelButton = document.getElementById('cancel-button');
+ 
+   // Function to display the pop-up
+   function displayPopup() {
+       overlay.style.display = 'block';
+       popup.style.display = 'block';
+   }
+ 
+   // Function to hide the pop-up
+   function hidePopup() {
+       overlay.style.display = 'none';
+       popup.style.display = 'none';
+   }
+ 
+   // Show the pop-up after page load (you can use 'DOMContentLoaded' event too)
+   window.onload = displayPopup;
+ 
+   // Add an event listener to the cancel button to hide the pop-up
+   cancelButton.addEventListener('click', hidePopup);
+ 
+   // Optionally, you can also hide the pop-up when clicking on the overlay
+   overlay.addEventListener('click', hidePopup);
+ </script>
+
+<script>
+   // JavaScript function to toggle the menu visibility
+   function toggleMenu() {
+       var menu = document.getElementById("menuLinks");
+       if (menu.style.display === "flex") {
+           menu.style.display = "none";
+       } else {
+           menu.style.display = "flex";
+       }
+   }
+</script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
