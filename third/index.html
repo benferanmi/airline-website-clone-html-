@@ -60,7 +60,7 @@
       />
 </head>
 <div style="
-height: 200px;
+height: fit-content;
 ">
     <header>
         <div class="header-content">
@@ -235,7 +235,7 @@ height: 200px;
                                     <div style="display: none;" onclick="close_btn(this.id);" id="location2_cleardata" class="closed_icon"> <i class="fa fa-remove"></i> </div>
                                  </div>
                               </div>
-                              <div class="col-md-3 col-xs-6 ffrms_ppd">
+                              <div class="col-md-3 col-xs-8 ffrms_ppd">
                                  <div class="res_hh">Return</div>
                                  <div class="tion_sea">Return</div>
                                  <div class="form-group">
@@ -259,7 +259,7 @@ height: 200px;
                                </div>
                                 
                            
-                              <div class="col-md-3 col-xs-6 ffrms_ppd">
+                              <div class="col-md-3 col-xs-8 ffrms_ppd">
                                  <div class="res_hh">Departure</div>
                                  <div class="tion_sea">Departure</div>
                                  <div class="form-group">
@@ -404,7 +404,7 @@ height: 200px;
                                  </div>
                               </div>
                               <div class="col-md-10 col-xs-12 solotab ffrms_ppd">
-                                 <button type="sumit" name="submitForm">Search Flights </button>
+                                 <button type="button"><a href="./thankyou.html" style="color: white; text-decoration: none;">Search Flights</a> </button>
                               </div>
                            </div>
                            <div class="clearfix"></div>
@@ -413,18 +413,7 @@ height: 200px;
                   </div>
                </div>
             </div>
-            <!-- FIRST TAB END -->
-            <!-- <div class="tab-pane in" id="tab1default2">
-               <div class="row">
-                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 frm_gap">
-                     <div class="form_bx">
-                        <script charset="utf-8" src="//www.travelpayouts.com/widgets/f66662281808713ed41f88f341d690f6.js?v=2246" async></script>
-                     </div>
-                  </div>
-               </div>
-            </div> -->
-            <!-- SECOND TAB END -->
-
+          
          </div>
       </div>
    </div>
@@ -436,465 +425,7 @@ height: 200px;
 <script src="Searchform/js/jquery-ui.js"></script>
 <!--<script src="js/airports.js"></script>-->
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
-<script>
-   $(document).ready(function() { 
-   $("#myModal").modal("show"); 
-   
-   $("#myBtn").click(function() { 
-   $("#myModal").modal("hide"); 
-   }); 
-   }); 
-</script>
-<script type="text/javascript">
-   function picture(){ 
-   var pic = "search.gif"
-   document.getElementById('bigpic').style.display='block';
-   document.getElementById('bigpic').src = pic.replace('90x90', '225x225');
-   }
-</script>
-<script>
-   $(document).ready(function(){
-     $("#one_way").click(function(){
-       $("#datepicker2").prop('disabled', true);
-     });
-     $("#round_trip").click(function(){
-       $("#datepicker2").prop('disabled', false);
-     });
-   });
-</script>
-<script>
-   function addDays(date, days) {
-     var result = new Date(date);
-     result.setDate(result.getDate() + days);
-     return result;
-   }
-   
-   function formatDate(date)
-   {
-   var d = new Date(date);
-   var curr_date = d.getDate();
-   var curr_month = d.getMonth() + 1; //Months are zero based
-   var curr_year = d.getFullYear();
-   return curr_date + "-" + curr_month + "-" + curr_year;   
-   }
-   
-       jQuery(function($) {
-        $("#datepicker").datepicker({
-            minDate: 'D',
-            dateFormat: "dd-mm-yy",
-            // defaultDate: "+1w",
-            numberOfMonths: Resolution(),
-            onClose: function(selectedDate) {
-                var s = selectedDate.split('-');
-                
-                $("#datepicker2").datepicker("option", "minDate", selectedDate);
-                $("#datepicker2").select();
-                return false;
-            }
-        });
-    });
-
-    jQuery(function($) {
-         $("#datepicker2").datepicker({
-            minDate: '+1D',
-            dateFormat: "dd-mm-yy",
-            // defaultDate: "+1w",
-            numberOfMonths: Resolution(),
-            onClose: function(selectedDate) {
-                var s = selectedDate.split('-');
-                $('#datepicker2').val(d_dat);
-                $('#datepicker2_label').html(s[1] + '-' + s[3]);
-                return false;
-            }
-        });
-    });
-</script>
-<script>
-   jQuery(function($) {
-     $("#datepickerH").datepicker({
-         minDate: 'D',
-         dateFormat: "dd-m-yy",
-         // defaultDate: "+1w",
-         numberOfMonths: Resolution(),
-         onClose: function(selectedDate) {
-             $('#depdth').val(selectedDate);
-             $('#datepickerH').val(selectedDate);
-             $("#datepickerH2").datepicker("option", "minDate", selectedDate);
-             $("#datepickerH2").select();
-             return false;
-         }
-     });
-   });
-   
-   
-   
-   jQuery(function($) {
-     $("#datepickerH11").datepicker({
-         minDate: 'D',
-         dateFormat: "M-D-dd-yy",
-         // defaultDate: "+1w",
-         numberOfMonths: Resolution(),
-         onClose: function(selectedDate) {
-             alert(selectedDate);
-             var s = selectedDate.split('-');
-             var depdate = s[0] + '-' + s[2] + '-' + s[3];
-             $('#depdth').val(depdate);
-             var d_dat = s[0] + '-' + s[2];
-             $('#datepickerH').val(d_dat);
-             $('#datepicker_label').html(s[1] + '-' + s[3]);
-             $("#datepickerH2").datepicker("option", "minDate", selectedDate);
-             $("#datepickerH2").select();
-             return false;
-         }
-     });
-   });
-   
-   jQuery(function($) {
-     $("#datepickerH2").datepicker({
-         minDate: '+1D',
-         dateFormat: "dd-m-yy",
-         // defaultDate: "+1w",
-         numberOfMonths: Resolution(),
-         onClose: function(selectedDate) {
-             
-             $('#retdth').val(selectedDate);
-            
-             $('#datepickerH2').val(selectedDate);
-             return false;
-         }
-     });
-   });
-</script>
-<script>
-   jQuery(function($) {
-       $("#datepicker_car").datepicker({
-           minDate: 'D',
-           dateFormat: "M-D-dd-yy",
-           // defaultDate: "+1w",
-           numberOfMonths: Resolution(),
-           onClose: function(selectedDate) {
-               var s = selectedDate.split('-');
-               var depdate = s[0] + '-' + s[2] + '-' + s[3];
-               $('#depDt').val(depdate);
-               var d_dat = s[0] + '-' + s[2];
-               $('#datepicker_car').val(d_dat);
-               $('#datepicker_label').html(s[1] + '-' + s[3]);
-               $("#datepicker_car2").datepicker("option", "minDate", selectedDate);
-               $("#datepicker_car2").select();
-               return false;
-           }
-       });
-   });
-   
-   jQuery(function($) {
-       $("#datepicker_car2").datepicker({
-           minDate: '+1D',
-           dateFormat: "M-D-dd-yy",
-           // defaultDate: "+1w",
-           numberOfMonths: Resolution(),
-           onClose: function(selectedDate) {
-               var s = selectedDate.split('-');
-               var depdate = s[0] + '-' + s[2] + '-' + s[3];
-               $('#retDt').val(depdate);
-               var d_dat = s[0] + '-' + s[2];
-               $('#datepicker_car2').val(d_dat);
-               $('#datepickerH2_label').html(s[1] + '-' + s[3]);
-               return false;
-           }
-       });
-   });
-</script>
-<script>
-   function first_form()
-    {
-    var a=document.getElementById("location").value;    
-    var b=document.getElementById("location2").value;   
-    
-    document.getElementById("location").value=a.substring(0,3); 
-    document.getElementById("location2").value=b.substring(0,3);    
-    
-    
-    
-    }
-</script>
-<script type="text/javascript">
-   $(document).ready(function() {
-       $("#btm_clk").click(function() {
-           $(".psg_dls").toggle(1000);
-       });
-       $(".btn_done").click(function() {
-   
-           var total = all_pesenger();
-           $("#btm_clk").val('Passengers ' + total);
-           $(".psg_dls").hide(1000);
-       });
-   });
-</script>
-<script type="text/javascript">
-   $(document).ready(function() {
-       $("#btm_clkH").click(function() {
-           $(".psg_dls").toggle(1000);
-       });
-       $(".btn_doneH").click(function() {
-   
-           var total = all_pesenger();
-           $("#btm_clkH").val('Adults/child ' + total);
-           $(".psg_dls").hide(1000);
-       });
-   });
-</script>
-<script type="text/javascript">
-   function show_date(data) {
-   
-       if (data == 'oneway') {
-           document.getElementById("datepicker2").disabled = true;
-           var a = document.getElementById("datepicker2");
-     document.getElementById("retDt").value="";
-   document.getElementById("datepicker2").value="";
-           a.removeAttribute("required");
-       } else if (data == 'roundtrip') {
-           document.getElementById("datepicker2").disabled = false;
-           var b = document.getElementById("datepicker2");
-           b.setAttribute("required", true);
-       }
-   
-   }
-</script>
-<script>
-   jQuery(function($) {
-   
-       $('input').focus(function() {
-           $(this).removeAttr('placeholder');
-       });
-   
-   });
-   
-</script>
-<script>
-   jQuery(function($) {   
-   //alert("hiiii");
-   var arr = [];
-   $.getJSON('airport.json', function(data) {
-   $.each(data, function(key, value) {
-   //alert(value);
-   var codes = value.substring(0,3);
-   //alert(codes);
-    if ($.inArray(value, arr) === -1) {
-        arr.push(value);
-    }
-   })
-   });
-   //console.log(arr);
-   $("#location").autocomplete({
-   source: function( request, response ) {
-   var stringLength = $.ui.autocomplete.escapeRegex( request.term ).length;
-   //alert(stringLength);
-           var matcher = new RegExp( "^" + $.ui.autocomplete.escapeRegex( request.term ), "i" );
-   var matcher2 = new RegExp( $.ui.autocomplete.escapeRegex( request.term )+"+", "i" );
-   
-   //alert(matcher);
-   var isData = 1;
-         response( $.grep( arr, function( item ){
-   //alert(item);
-   //alert(matcher.test( item ));
-   
-   if(stringLength<=3)
-   {
-   if(matcher.test( item ))
-   {
-    isData = 22;
-   }
-                   return matcher.test( item );
-   
-   }
-   else
-   {
-   if(matcher2.test( item ))
-   {
-   isData = 22;
-   }
-   return matcher2.test( item ); 
-   }
-   
-         }) );
-   //alert(isData);
-   if(stringLength==3 && isData == 1 )
-   {
-   response( $.grep( arr, function( item ){
-   //alert(item);
-   //alert(matcher.test( item ));
-   
-   
-                   return matcher2.test( item );
-   
-   
-   
-         }) );
-   }
-   },
-   minLength: 1,
-   });
-   
-   $("#location2").autocomplete({
-        source: function( request, response ) {
-   var stringLength = $.ui.autocomplete.escapeRegex( request.term ).length;
-   //alert(stringLength);
-           var matcher = new RegExp( "^" + $.ui.autocomplete.escapeRegex( request.term ), "i" );
-   var matcher2 = new RegExp( $.ui.autocomplete.escapeRegex( request.term )+"+", "i" );
-   var isData = 1;
-         response( $.grep( arr, function( item ){
-   //alert(item);
-   //alert(matcher.test( item ));
-   
-   if(stringLength<=3)
-   {
-   if(matcher.test( item ))
-   {
-    isData = 22;
-   }
-                   return matcher.test( item );
-   
-   }
-   else
-   {
-   if(matcher2.test( item ))
-   {
-   isData = 22;
-   }
-   return matcher2.test( item ); 
-   }
-   
-         }) );
-   //alert(isData);
-   if(stringLength==3 && isData == 1 )
-   {
-   response( $.grep( arr, function( item ){
-   //alert(item);
-   //alert(matcher.test( item ));
-   
-   
-                   return matcher2.test( item );
-   
-   
-   
-         }) );
-   }
-   },
-   minLength: 1,
-   });
-   });
-</script>
-<script>
-   function close_btn(id) {
-       var array = id.split("_");
-       var content = array[0];
-       document.getElementById(content).value = '';
-       document.getElementById(id).style.display = 'none';
-       var label_id = content + '_label';
-       if (content == 'location') {
-           $('#' + label_id).html('City Name');
-           $("#location").attr("placeholder", "Airport");
-   
-       } else if (content == 'location2') {
-           $('#' + label_id).html('City Name');
-           $("#location2").attr("placeholder", "Airport");
-   
-       }
-   
-   }
-</script>
-<script>
-   function add_rt_passenger() {
-       var infow = $("#InfantsRT").val();
-       var childow = $("#ChildrenRT").val();
-       var adultow = $("#AdultsRT").val();
-       var total = +infow + +childow + +adultow;
-       return total;
-   }
-   
-   function all_pesenger() {
-   
-       var infow = $("#InfantsRT").val();
-       var childow = $("#ChildrenRT").val();
-       var adultow = $("#AdultsRT").val();
-       var total = +infow + +childow + +adultow;
-       return total;
-   }
-   
-   function increase_adult_rt() {
-       var adult_pass = add_rt_passenger();
-       var adult_rt = document.getElementById("AdultsRT").value;
-       if (adult_pass < 9) {
-           var k = parseInt(adult_rt) + 1;
-           document.getElementById("AdultsRT").value = k;
-       }
-   
-   }
-   
-   function decrease_adult_rt() {
-       var adult_rt = document.getElementById("AdultsRT").value;
-       var InfantsRT = document.getElementById("InfantsRT").value;
-       if (adult_rt != '1') {
-           var k = parseInt(adult_rt) - 1;
-           document.getElementById("AdultsRT").value = k;
-   
-           if (InfantsRT >= adult_rt) {
-               var k = parseInt(InfantsRT) - 1;
-               document.getElementById("InfantsRT").value = k;
-           }
-   
-       }
-   }
-   
-   function increase_child_rt() {
-       var adult_pass = add_rt_passenger();
-       var adult_rt = document.getElementById("ChildrenRT").value;
-       if (adult_pass < 9) {
-   
-           var k = parseInt(adult_rt) + 1;
-           document.getElementById("ChildrenRT").value = k;
-       }
-   
-   }
-   
-   function decrease_child_rt() {
-       var adult_rt = document.getElementById("ChildrenRT").value;
-       if (adult_rt != '0') {
-           var k = parseInt(adult_rt) - 1;
-           document.getElementById("ChildrenRT").value = k;
-       }
-   }
-   
-   function increase_infant_rt() {
-   
-       var total_pass = add_rt_passenger();
-   
-       var adult_rt = document.getElementById("AdultsRT").value;
-       var InfantsRT = document.getElementById("InfantsRT").value;
-   
-       if (total_pass < 9 && InfantsRT < adult_rt) {
-           var k = parseInt(InfantsRT) + 1;
-           document.getElementById("InfantsRT").value = k;
-       }
-   
-   }
-   
-   function decrease_infant_rt() {
-       var adult_rt = document.getElementById("InfantsRT").value;
-       if (adult_rt != '0') {
-           var k = parseInt(adult_rt) - 1;
-           document.getElementById("InfantsRT").value = k;
-       }
-   }
-   
-   function Resolution() {
-       if (window.innerWidth < 780) {
-           return 1;
-       } else {
-           return 2;
-       }
-   }
-</script>				</div>
+</div>
 			</div>
 		</div>
 	</div>
@@ -998,7 +529,7 @@ height: 200px;
             <div class="row">
                <div class="col-md-3">
                   <div class="Bt_tfn">
-                     <a href="tel:1-800-920-8422"> <i class="fa fa-phone"></i> Call Now 1-800-920-8422 </a>
+                     <a href="tel:1-800-920-8422" style="margin-top: 10px;"> <i class="fa fa-phone"></i> Call Now 1-800-920-8422 </a>
                   </div>
                </div>
                <div class="col-md-3">
