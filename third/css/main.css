@@ -461,3 +461,15 @@
   font-size: 20px;
   cursor: pointer;
 }
+
+.date-hidden {
+  display: none;
+}
+
+@media screen and (max-width: 420px) {
+  .date-hidden {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+}
