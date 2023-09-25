@@ -148,13 +148,13 @@ height: fit-content;
                
          <div class="exbt_cl">
           <h6> Exclusive Phone Only Deals </h6>
-          <h4> <i class="fa fa-headphones"></i> 1-000-000-0000 </h4>
+          <h4> <i class="fa fa-headphones"></i> +1 (888) 465-0457 </h4>
          </div>
          </a>
             </div>
          <div class="fttr_ttl">
           <p> Call US NOW </p>
-         <a href="tel:1-000-000-000">  <i class="fa fa-phone"></i> 1-000-000-0000</a>
+         <a href="tel:+1-888-465-0457">  <i class="fa fa-phone"></i> +1 (888) 465-0457</a>
          </div>
            </div>
         </div>
@@ -180,9 +180,6 @@ height: fit-content;
             <li>
                <a href="#tab1default" class="active" data-bs-toggle="tab"> <i class="fa fa-plane"></i> Flights </a>
             </li>
-             <!-- <li>
-              <a href="#tab1default2" data-bs-toggle="tab"> <i class="fa fa-plane"></i> Hotel </a>
-           </li> -->
          </ul>
       </div>
       <div class="panel-body">
@@ -217,9 +214,9 @@ height: fit-content;
                                  <div class="tion_sea"> From airport / city </div>
                                  <div class="form-group">
                                     <label class="frm_llbs">
-                                       <i class="fas fa-plane-departure"></i> <!-- <img src="Searchform/images/plane_fly.png"> --> 
+                                       <i class="fas fa-plane-departure"></i> 
                                     </label>
-                                    <input type="text" required="required" class="form-control ipt1 location-fld serlocation" autocomplete="off" placeholder="City or airport" name="origin" id="location">
+                                    <input type="text" required="required" class="form-control ipt1 location-fld serlocation" autocomplete="off" placeholder="From City or airport" name="origin" id="location">
                                  </div>
                               </div>
                               <div class="roud_icons"> <img src="Searchform/images/swipe-icn.png"> </div>
@@ -228,9 +225,9 @@ height: fit-content;
                                  <div class="tion_sea"> To airport / city </div>
                                  <div class="form-group">
                                     <label class="frm_llbs">
-                                       <i class="fas fa-plane-arrival"></i> <!-- <img src="Searchform/images/plane_down.png"> -->  
+                                       <i class="fas fa-plane-arrival"></i>
                                     </label>
-                                    <input required="required" type="text" class="form-control ipt1 location-fld serlocation" placeholder="City or airport" name="destination" autocomplete="off" id="location2">
+                                    <input required="required" type="text" class="form-control ipt1 location-fld serlocation" placeholder="To City or airport" name="destination" autocomplete="off" id="location2">
                                     <div style="display: none;" onclick="close_btn(this.id);" id="location2_cleardata" class="closed_icon"> <i class="fa fa-remove"></i> </div>
                                  </div>
                               </div>
@@ -242,8 +239,7 @@ height: fit-content;
                                      <i
                                        class="fa fa-calendar"
                                        aria-hidden="true"
-                                     ></i
-                                     ><!-- <img src="Searchform/images/dateoick.png"> -->
+                                     ></i>
                                    </label>
                                    <input
                                      name="retDt"
@@ -252,12 +248,10 @@ height: fit-content;
                                      value=""
                                    />
                                    <div>
-                                     <input type="date" class="ipt1" style="width: 100%;"/>
+                                     <input type="date" placeholder="Arrival Date" class="ipt1" style="width: 100%;"/>
                                    </div>
                                  </div>
                                </div>
-                                
-                           
                               <div class="col-md-3 col-xs-12 ffrms_ppd">
                                  <div class="res_hh">Departure</div>
                                  <div class="tion_sea">Departure</div>
@@ -267,7 +261,7 @@ height: fit-content;
                                        class="fa fa-calendar"
                                        aria-hidden="true"
                                      ></i>
-                                     <!-- <img src="Searchform/images/dateoick.png"> -->
+                                  
                                    </label>
                                    <input
                                      name="depDt"
@@ -282,112 +276,45 @@ height: fit-content;
                                      value=""
                                    />
                                    <div>
-                                     <input type="date" class="ipt1" style="width: 100%;"/>
+                                     <input type="date" placeholder="Departure Date" class="ipt1" style="width: 100%;"/>
                                    </div>
                                  </div>
                                </div>
                               <div class="col-md-2 col-sm-6 col-xs-12 ffrms_ppd">
-                                 <div class="res_hh">
-                                    <!-- Cabin Class &  -->Travelers  
-                                 </div>
-                                 <div class="tion_sea"> Class & Travelers </div>
-                                 <div class="form-group">
-                                    <label class="frm_llbs">
-                                       <i class="fa fa-male"></i><!-- <img src="Searchform/images/passenger_iim.png"> --> 
-                                    </label>
-                                    <input type="text" class="form-control ipt1" placeholder="Passengers 1" name="" autocomplete="off" id="btm_clk">
-                                    <div class="psg_dls" style="display: none;">
-                                       <div class="col-xs-12 gapres_dd">
-                                          
-                                       </div>
-                                       <div class="col-sm-12 gapres_dd">
-                                          
-                                             <div class="pass_bx">
-                                                <label>Adults <small>(+11 yrs)</small></label>
-                                                <div class="input-group number-spinner">
-                                                   
-                                                      <div class="col-md-3 col-3 inpt_gp">
-                                                         <span class="input-group-btn">
-                                                         <a class="btn mns_btn" data-dir="dwn" onclick="decrease_adult_rt()"><span class="fa fa-minus"></span></a>
-                                                         </span>
-                                                      </div>
-                                                      <div class="col-md-6 col-6 inpt_gp">
-                                                         <input type="text" id="AdultsRT" class="form-control text-center add_num" name="adt" value="1">
-                                                      </div>
-                                                      <div class="col-md-3 col-3 inpt_gp">
-                                                         <span class="input-group-btn">
-                                                         <a class="btn add_btn" data-dir="up" onclick="increase_adult_rt()"><span class="fa fa-plus"></span></a>
-                                                         </span>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                            
-                                       
-                                       </div>
-                                       <div class="col-sm-12 gapres_dd">
-                                          
-                                             <div class="pass_bx">
-                                                <label>Child <small>(2-11 yrs)</small></label>
-                                                <div class="input-group number-spinner">
-                                                   
-                                                      <div class="col-md-3 col-3 inpt_gp">
-                                                         <span class="input-group-btn">
-                                                         <a class="btn mns_btn" data-dir="dwn" onclick="decrease_child_rt()"><span class="fa fa-minus"></span></a>
-                                                         </span>
-                                                      </div>
-                                                      <div class="col-md-6 col-6 inpt_gp">
-                                                         <input type="text" id="ChildrenRT" class="form-control text-center add_num" name="chd" value="0">
-                                                      </div>
-                                                      <div class="col-md-3 col-3 inpt_gp">
-                                                         <span class="input-group-btn">
-                                                         <a class="btn add_btn" data-dir="up" onclick="increase_child_rt()"><span class="fa fa-plus"></span></a>
-                                                         </span>
-                                                      </div>
-                                                  
-                                                </div>
-                                             </div>
-                                        
-                                       </div>
-                                       <div class="col-sm-12 gapres_dd">
-                                             <div class="pass_bx">
-                                                <label> Infant <small>(Upto 2 yrs)  </small>
-                                                </label> 
-                                                <br>                                         <label class="radio-inline">
-                                                <input type="radio" name="infon" value="F" checked style="margin-top:-2px;"> On Lap
-                                                </label>
-                                                <label class="radio-inline">
-                                                <input type="radio" name="infon" value="S" style="margin-top:-2px;">On Seat
-                                                </label>
-                                                <div class="input-group number-spinner">
-                                                   
-                                                      <div class="col-md-3  col-3 inpt_gp">
-                                                         <span class="input-group-btn">
-                                                         <a class="btn mns_btn" data-dir="dwn" onclick="decrease_infant_rt()"><span class="fa fa-minus" ></span></a>
-                                                         </span>
-                                                      </div>
-                                                      <div class="col-md-6 col-6 inpt_gp">
-                                                         <input type="text" class="form-control text-center add_num" id="InfantsRT" name="inf" value="0">
-                                                      </div>
-                                                      <div class="col-md-3 col-3 inpt_gp">
-                                                         <span class="input-group-btn">
-                                                         <a class="btn add_btn" data-dir="up" onclick="increase_infant_rt()"><span class="fa fa-plus"></span></a>
-                                                         </span>
-                                                      </div>
-                                                   
-                                                </div>
-                                             </div>
-                                          
-                                       </div>
-                                       <div class="col-sm-12 col-xs-12 gapres_dd">
-                                          <!-- <div class="row"> -->
-                                          <div class="btn_dn">
-                                             <button type="button" onclick="all_pesenger();" class="btn_done">Done</button>
-                                          </div>
-                                          <!-- </div> -->
-                                       </div>
-                                    </div>
-                                 </div>
+                                       <div style="width: 100%; position: relative;">
+                                          <button style="width: 100%; background-color: white; border: 1px solid gray; color: #555; font-size: 14px; margin-bottom: 20px;" id="mainButton" 
+                                          type="button"
+                                           onclick="showGuestFields()">Passenger</button>
+    <div id="guestFields" style="display: none;">
+      <div>
+         Adults
+      </div>
+        <div class="guest-container">
+            <button type="button" class="guest-button" onclick="decreaseValue('adults')">-</button>
+            <input type="number" class="guest-input" id="adults" value="0">
+            <button type="button" class="guest-button" onclick="increaseValue('adults')">+</button>
+        </div>
+        <div>
+         Children
+        </div>
+        <div class="guest-container">
+            <button type="button" class="guest-button" onclick="decreaseValue('children')">-</button>
+            <input type="number" class="guest-input" id="children" value="0">
+            <button type="button" class="guest-button" onclick="increaseValue('children')">+</button>
+        </div>
+        <div>
+         Infants
+        </div>
+        <div class="guest-container">
+            <button type="button" class="guest-button" onclick="decreaseValue('infants')">-</button>
+            <input type="number" class="guest-input" id="infants" value="0">
+            <button type="button" class="guest-button" onclick="increaseValue('infants')">+</button>
+        </div>
+        <button type="button" onclick="closeGuestFields()" style="width: 100px; margin-bottom: 20px;">Done</button>
+    </div>
+                                       </div>    
                               </div>
+                                       
                               
                               <div class="col-md-2 col-xs-12 ffrms_ppd">
                                  <div class="form-group">
@@ -617,6 +544,41 @@ height: fit-content;
        }
    }
 </script>
+
+<script>
+   function showGuestFields() {
+       const guestFields = document.getElementById("guestFields");
+       guestFields.style.display = "block";
+   }
+
+   function closeGuestFields() {
+       const guestFields = document.getElementById("guestFields");
+       guestFields.style.display = "none";
+
+       // Calculate the total number of selected inputs
+       const adults = parseInt(document.getElementById("adults").value);
+       const children = parseInt(document.getElementById("children").value);
+       const infants = parseInt(document.getElementById("infants").value);
+       const totalGuests = adults + children + infants;
+
+       // Display the total in the main button
+       const mainButton = document.getElementById("mainButton");
+       mainButton.textContent = `Total Passenger: ${totalGuests}`;
+   }
+
+   function increaseValue(type) {
+       const inputField = document.getElementById(type);
+       inputField.value = parseInt(inputField.value) + 1;
+   }
+
+   function decreaseValue(type) {
+       const inputField = document.getElementById(type);
+       if (parseInt(inputField.value) > 0) {
+           inputField.value = parseInt(inputField.value) - 1;
+       }
+   }
+</script>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>

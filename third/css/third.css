@@ -249,7 +249,7 @@ a.nav-link i {
     margin: 0 0 6px 0;
     font-size: 25px;
     font-weight: 600;
-    color: #303779;
+    color: #01426a;
     position: relative;
     display: inline-block;
 }
@@ -315,7 +315,7 @@ a.nav-link i {
 }
 .top_destinations_cap h4 {
     margin: 0;
-    color: #303779;
+    color: #01426a;
     font-size: 16px;
     font-weight: 500;
     border-bottom: 1px solid whitesmoke;
@@ -395,7 +395,7 @@ a.nav-link i {
     margin: 0 0 22px 0;
     font-size: 25px;
     font-weight: 600;
-    color: #303779;
+    color: #01426a;
     position: relative;
     display: inline-block;
 }
@@ -408,22 +408,32 @@ a.nav-link i {
     width: 64px;
     height: 3px;
 }
-
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 600px) {
     .about_cont h4:before {
-        display: none;
-    }
-    .about_cont h4 i {
-        display: no;
+        display: block;
     }
 }
+@media screen and (max-width: 405px) {
+    .about_cont h4:before {
+        display: block !important;
+        top: 57px;
+    }
+    .about_cont h4 i {
+        left: 63px !important;
+        top:50px !important;
+
+    }
+}
+@media screen and (max-width: 420px) {
+    .about_cont h4:before {
+        display: block;
+    }
+ 
+}
 .about_cont h4 i {
-    position: absolute;
-    left: 45px;
-    top:28px;
-    transform: rotate(0deg);
-    color: #01426a;
-    font-size: 19px;
+    left: 63px !important;
+    top:31px !important;
+   
 }
 .about_cont p {
     margin: 0px 0px 8px 0px;
@@ -736,7 +746,7 @@ a.nav-link i {
     margin: 0 0 22px 0;
     font-size: 25px;
     font-weight: 600;
-    color: #303779;
+    color: #01426a;
     position: relative;
     display: inline-block;
 }
