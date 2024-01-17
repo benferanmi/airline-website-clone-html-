@@ -7,6 +7,10 @@
 @import url("owl.carousel.css");
 @import url("scrolling-nav.css");
 
+body {
+  color: #0ab1e8 !important;
+}
+
 /*
 ================================================
 [  BASIC STYLE START ]
@@ -335,26 +339,26 @@ _______________________________________________________*/
     padding-bottom: 15px;
   }
   h3 {
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 20px !important;
+    line-height: 25px !important;
   }
   h3.sub-heading {
      font-weight: 500;
      margin-bottom: 0;
   }
   h4 {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 16px !important;
+    line-height: 20px !important;
   }
   h5 {
-    font-size: 15px;
-    line-height: 18px;
-    font-weight: 500;
+    font-size: 15px !important;
+    line-height: 18px !important;
+    font-weight: 500 !important;
   }
   h6 {
-    font-size: 12px;
-    line-height: 17px;
-    font-weight: 500;
+    font-size: 12px !important;
+    line-height: 17px !important;
+    font-weight: 500 !important;
   }
   h6.heading-sub-title {
     color: #0ab1e8;
@@ -363,8 +367,8 @@ _______________________________________________________*/
     letter-spacing: 2px;
   }
   .sub_title.heading {
-    font-weight: 600;
-    font-size: 22px;
+    font-weight: 600 !important;
+    font-size: 22px !important;
   }
   .heading-des {
     max-width: 600px;
@@ -1017,7 +1021,7 @@ _______________________________________________________*/
 
 /* - Header Style  //---------------- */
 header#header {
-	background: transparent;
+	background: #1a1c8e;
 	top: 0;
 	width: 100%;
 	border: none;
